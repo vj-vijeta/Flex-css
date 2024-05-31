@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Demonstrator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="controls">
+    <h4>Flex Properties</h4>
+    <div class="dropdown">
+      <label for="flex-direction">Flex Direction:</label>
+      <select id="flex-direction">
+        <option value="row">Row</option>
+        <option value="row-reverse">Row Reverse</option>
+        <option value="column">Column</option>
+        <option value="column-reverse">Column Reverse</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="flex-wrap">Flex Wrap:</label>
+      <select id="flex-wrap">
+        <option value="nowrap">No Wrap</option>
+        <option value="wrap">Wrap</option>
+        <option value="wrap-reverse">Wrap Reverse</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="justify-content">Justify Content:</label>
+      <select id="justify-content">
+        <option value="flex-start">Start</option>
+        <option value="flex-end">End</option>
+        <option value="center">Center</option>
+        <option value="space-between">Space Between</option>
+        <option value="space-around">Space Around</option>
+        <option value="space-evenly">Space Evenly</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="align-items">Align Items:</label>
+      <select id="align-items">
+        <option value="flex-start">Start</option>
+        <option value="flex-end">End</option>
+        <option value="center">Center</option>
+        <option value="baseline">Baseline</option>
+        <option value="stretch">Stretch</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="align-content">Align Content:</label>
+      <select id="align-content">
+        <option value="flex-start">Start</option>
+        <option value="flex-end">End</option>
+        <option value="center">Center</option>
+        <option value="space-between">Space Between</option>
+        <option value="space-around">Space Around</option>
+        <option value="stretch">Stretch</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="flex-grow">Flex Grow:</label>
+      <input type="number" id="flex-grow" value="0" min="0" step="1">
+    </div>
+    <div class="dropdown">
+      <label for="flex-shrink">Flex Shrink:</label>
+      <input type="number" id="flex-shrink" value="1" min="0" step="1">
+    </div>
+    <div class="dropdown">
+      <label for="flex-basis">Flex Basis:</label>
+      <input type="text" id="flex-basis" value="auto">
+    </div>
+    <div class="dropdown">
+      <label for="align-self">Align Self:</label>
+      <select id="align-self">
+        <option value="auto">Auto</option>
+        <option value="flex-start">Start</option>
+        <option value="flex-end">End</option>
+        <option value="center">Center</option>
+        <option value="baseline">Baseline</option>
+        <option value="stretch">Stretch</option>
+      </select>
+    </div>
+  </div>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
